@@ -83,6 +83,7 @@ est_dist <- function(N=5000, S=20, probs=NULL, mu, sd, block.time = 30, discrete
   }
 }
 
+
 # Compute theoretical probability distribution given no show, single show and double show probs
 # probs: vector of length 3 containing no show, single show, and double show probabilities
 # n: number of time slots in a day

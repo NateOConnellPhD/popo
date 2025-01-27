@@ -1,6 +1,7 @@
 source("source/functions.R")
 sourceCpp("source/functions.cpp")
 
+
 # `data' read in as list with 3 primary components, 3 secondary components, and 8 tertiary components (datasets)
 # `data$train`: contains info on training data
 #               data$train$y contains realized show (0), and no-show(1) outcomes
@@ -58,7 +59,7 @@ probs <- gen_probs(preds=NULL, complete=F, S=S, slot.prob=slot.prob, ob.prob=ob.
 # sd: log-normal sd service time
 # block.time: length of service blocks/slots
 # print.time: If `TRUE`, computation time is printed 
-sim_data <- est_dist(N=10000, S=S, probs=probs, mu=mu, sd=sd, block.time=block.time, print.time=T)
+sim_data <- est_dist(N=10000,  S=S, probs=probs, mu=mu, sd=sd, block.time=block.time, print.time=T)
 
 
 #### Get Estimated Performance Metrics Related to `Costs` from simulated data
